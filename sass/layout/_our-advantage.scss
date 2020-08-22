@@ -1,6 +1,6 @@
 /*Оформление секции Наше преимущество*/
 .advantage {
-  // padding-top: 94px;
+  padding-top: 94px;
 }
 
 .advantage-list {
@@ -25,7 +25,7 @@
 }
 .section-title {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   font-weight: 700;
   text-transform: uppercase;
@@ -35,14 +35,14 @@
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  // margin-right: 30px;
 }
 
 .icon-card {
-  // width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   border-radius: 4px;
-  padding: 25px 100px;
   background-color: #f5f4fa;
 
   .icon {
@@ -54,6 +54,7 @@
 @media screen and (max-width: 767px) {
   .advantage {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .icon-card {
     width: 450px;
@@ -62,10 +63,47 @@
   .section-title {
     text-align: center;
   }
+  .advantage-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .icon-card {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-card {
+    width: 354px;
+  }
+
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  .advantage-list-item {
+    width: 354px;
+  }
+  .advantage-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .advantage-list-item:nth-child(n + 1) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list {
+    display: flex;
+  }
+  .advantage-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .icon-card {
+    width: 270px;
   }
 }

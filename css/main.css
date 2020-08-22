@@ -729,7 +729,7 @@ img {
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
-  li:not(:last-child) {
+  .site-nav li:not(:last-child) {
     margin-bottom: 40px;
   }
   .page-header {
@@ -1050,6 +1050,10 @@ img {
 }
 
 /*Оформление секции Наше преимущество*/
+.advantage {
+  padding-top: 94px;
+}
+
 .advantage-list h3 {
   padding-top: 30px;
 }
@@ -1068,7 +1072,7 @@ img {
 
 .section-title {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   font-weight: 700;
   text-transform: uppercase;
@@ -1082,9 +1086,11 @@ img {
 }
 
 .icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   border-radius: 4px;
-  padding: 25px 100px;
   background-color: #f5f4fa;
 }
 
@@ -1096,6 +1102,7 @@ img {
 @media screen and (max-width: 767px) {
   .advantage {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .icon-card {
     width: 450px;
@@ -1104,11 +1111,46 @@ img {
   .section-title {
     text-align: center;
   }
+  .advantage-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .icon-card {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-card {
+    width: 354px;
+  }
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  .advantage-list-item {
+    width: 354px;
+  }
+  .advantage-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .advantage-list-item:nth-child(n + 1) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list {
+    display: flex;
+  }
+  .advantage-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .icon-card {
+    width: 270px;
   }
 }
 
@@ -1133,8 +1175,6 @@ img {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
   color: #212121;
 }
 
@@ -1158,6 +1198,12 @@ img {
 
 .work-item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .social-list {
@@ -1237,20 +1283,9 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-section {
   background-color: #f5f4fa;
   text-align: center;
-  padding-bottom: 94px;
-}
-
-.our-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .our-team h3 {
@@ -1280,10 +1315,25 @@ img {
   font-size: 16px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.187;
   letter-spacing: 0.03em;
   padding-right: 24px;
   padding-left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-section .work-title {
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+    padding-top: 60px;
+  }
+  .team-section {
+    padding-bottom: 60px;
+  }
+  .our-team-card {
+    margin-top: 30px;
+  }
 }
 
 /*Стилизация секции Постоянные клиенты*/
