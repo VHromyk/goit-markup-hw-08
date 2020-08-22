@@ -1,0 +1,52 @@
+/*Оформление секции Наше преимущество*/
+.advantage {
+  padding-top: 94px;
+}
+.advantage-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  h3 {
+    padding-top: 30px;
+  }
+
+  p {
+    padding-top: 10px;
+  }
+}
+
+.container .card {
+  margin-right: 30px;
+}
+.hide-title {
+  display: none;
+}
+.section-title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $title-text-color;
+}
+.section-text {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-right: 30px;
+}
+
+.icon-card {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  padding-top: 0px;
+  padding: 25px 100px;
+  justify-items: center;
+  background-color: #f5f4fa;
+
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+}

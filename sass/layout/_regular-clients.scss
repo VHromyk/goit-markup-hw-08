@@ -1,0 +1,77 @@
+/*Стилизация секции Постоянные клиенты*/
+.client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.box .box-link {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  padding-top: 20px;
+
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box .box-link:hover,
+.box .box-link:focus {
+  border-color: $accent-text-color;
+}
+
+.box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.box-link-svg {
+  fill: #afb1b8;
+
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-logo {
+  width: 45px;
+  height: 49px;
+}
+.second-logo {
+  width: 40px;
+  height: 52px;
+}
+.third-logo {
+  width: 45px;
+  height: 49px;
+}
+.fourth-logo {
+  width: 80px;
+  height: 42px;
+}
+.fifth-logo {
+  width: 59px;
+  height: 47px;
+}
+.sixth-logo {
+  width: 89px;
+  height: 46px;
+}
+
+.box-link:hover .box-link-svg {
+  fill: $accent-text-color;
+}

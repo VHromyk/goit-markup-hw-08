@@ -1,0 +1,48 @@
+/*Оформление адреса*/
+.head-address {
+  &-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+  }
+}
+
+.head-address-button {
+  font-size: 18px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: $primary-text-color;
+  border-style: none;
+  padding: unset;
+  cursor: pointer;
+  outline: none;
+
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &:hover {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+  }
+  &:hover .head-address-icon {
+    fill: $accent-text-color;
+  }
+}
+
+.head-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

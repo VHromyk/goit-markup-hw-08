@@ -1,0 +1,48 @@
+/*Оформление секции Чем мы занимаемся*/
+.work {
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+
+  &-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    padding-left: 15px;
+  }
+}
+
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  color: $title-text-color;
+
+  &-name {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    height: 70px;
+    width: 370px;
+    padding-top: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $back-button-color;
+  }
+}
+
+.work-item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: $title-text-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/bases";
+@import "./components/container";
+@import "./components/modal-window-is-hidden";
+@import "./components/modal-window";
+
+@import "./layout/header";
+@import "./components/logo";
+@import "./layout/header-adress";
+@import "./components/button";
+@import "./layout/hero";
+@import "./layout/our-advantage";
+@import "./layout/our-work";
+@import "./components/social-links";
+@import "./layout/our-team";
+@import "./layout/regular-clients";
+@import "./layout/footer";
+
+// @import "./layout/portfolio";

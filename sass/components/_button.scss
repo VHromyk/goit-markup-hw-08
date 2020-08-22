@@ -1,0 +1,51 @@
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+
+  color: $text-button;
+  background-color: $accent-text-color;
+
+  -webkit-transition-duration: 250ms;
+
+  -o-transition-duration: 250ms;
+
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.primary {
+  text-align: center;
+  color: $text-button;
+  background-color: $accent-text-color;
+  margin-top: 30px;
+
+  &:hover {
+    background: #188ce8;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button.secondary {
+  color: $title-text-color;
+  background-color: $back-button-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    color: $text-button;
+  }
+}

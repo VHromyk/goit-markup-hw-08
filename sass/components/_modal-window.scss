@@ -1,0 +1,252 @@
+/* Модальное окно */
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.modal-form {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: $text-button;
+  border-radius: 4px;
+
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    padding-top: 40px;
+    padding-left: 41px;
+    color: $title-text-color;
+  }
+}
+
+.modal-form-input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+
+  &:hover + .modal-form-label {
+    color: $accent-text-color;
+  }
+
+  &:focus ~ .modal-form-input-svg {
+    fill: $accent-text-color;
+  }
+
+  &:hover ~ .modal-form-input-svg,
+  &:not(:placeholder-shown) ~ .modal-form-input-svg {
+    fill: $accent-text-color;
+  }
+
+  &:focus + .modal-form-label,
+  &:not(:placeholder-shown) + .modal-form-label {
+    font-size: 12px;
+    -webkit-transform: translate(-30px, -30px);
+    -ms-transform: translate(-30px, -30px);
+    transform: translate(-30px, -30px);
+
+    color: $accent-text-color;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-form-massage {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  margin-left: 41px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+  }
+  &::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+  &::-moz-placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+  &:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+  &::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: $accent-text-color;
+  }
+  &:focus::-moz-placeholder {
+    color: $accent-text-color;
+  }
+  &:focus:-ms-input-placeholder {
+    color: $accent-text-color;
+  }
+  &:focus::-ms-input-placeholder {
+    color: $accent-text-color;
+  }
+  &:focus::placeholder {
+    color: $accent-text-color;
+  }
+}
+
+.modal-form-label {
+  position: absolute;
+  left: 83px;
+  right: 0;
+}
+
+.modal-form-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 41px;
+  margin-bottom: 28px;
+}
+
+.modal-form-input-svg {
+  position: absolute;
+  left: 60px;
+}
+
+.modal-form-confidentional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 54px;
+  margin-top: 20px;
+
+  &-text {
+    margin-left: 7px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &-link {
+    text-decoration: underline;
+    color: $accent-text-color;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+.modal-form-checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+}
+
+.modal-btn {
+  margin-left: 165px;
+}
+
+.modal-form-input-button-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-style: none;
+  outline: none;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  background-color: $text-button;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  &:hover .modal-form-input-svg-close {
+    fill: $accent-text-color;
+  }
+}
