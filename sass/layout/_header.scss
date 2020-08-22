@@ -1,91 +1,19 @@
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 200;
-}
-
-.menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  z-index: 100;
-
-  &.is-open {
-    .icon-close {
-      display: block;
-    }
-    .icon-burger {
-      display: none;
-    }
-  }
-}
-
-.icon-burger {
-  padding: 0 auto;
-}
-
-.icon-close {
-  display: none;
-}
-
-.menu-wrapper {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  transform: translateY(-100%);
-  z-index: -100;
-
-  background: $text-button;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
-}
-
-.menu-wrapper.is-open {
-  display: block;
-  transform: translateY(0);
-  transition: transform 500ms linear;
-}
-
 .site-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.19;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   .link {
     position: relative;
-    display: inline-block;
+    padding-top: 31px;
+    padding-bottom: 31px;
     color: $title-text-color;
-
-    -webkit-transition-duration: 250ms;
-
-    -o-transition-duration: 250ms;
-
-    transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  li:not(:last-child) {
-    margin-bottom: 40px;
   }
 
   .current::after {
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
     display: block;
     content: "";
@@ -110,15 +38,125 @@
     text-align: center;
     font-size: 18px;
     line-height: 1.17;
-    margin-bottom: 60px;
+
+    .link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    transform: translateY(-100%);
+    z-index: -100;
+
+    background: $text-button;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+  }
+
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    z-index: 100;
+
+    &.is-open {
+      .icon-close {
+        display: block;
+      }
+      .icon-burger {
+        display: none;
+      }
+    }
+  }
+  .menu-btn-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  .menu-wrapper.is-open {
+    display: block;
+    transform: translateY(0);
+    transition: transform 500ms linear;
+  }
+  .link {
+    position: relative;
+    display: inline-block;
+
+    -webkit-transition-duration: 250ms;
+
+    -o-transition-duration: 250ms;
+
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-utils {
+    margin-top: 60px;
   }
 }
 
-// .page-header {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-// }
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 88px;
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-wrapper {
+    margin-left: 93px;
+  }
+}

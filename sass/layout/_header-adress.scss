@@ -1,15 +1,11 @@
 /*Оформление адреса*/
 .head-address {
   &-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
     fill: $primary-text-color;
   }
 }
 
 .head-address-button {
-  font-size: 18px;
   display: block;
   border: none;
   background-color: transparent;
@@ -28,9 +24,6 @@
   -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
   &:hover {
     color: $accent-text-color;
     fill: $accent-text-color;
@@ -40,9 +33,74 @@
   }
 }
 
-.head-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .head-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-icon {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+
+    .head-address-button {
+      font-size: 18px;
+      line-height: 1.166;
+    }
+  }
+  .head-address-button:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-address-button {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    line-height: 1.166;
+  }
+  .head-address {
+    &-icon {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+    }
+  }
+  .header-utils {
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .head-address-button:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-address {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+  }
+
+  .head-address-button {
+    font-size: 14px;
+    line-height: 1.142;
+  }
+
+  .head-address-button:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header-utils {
+    margin-left: 305px;
+  }
 }
