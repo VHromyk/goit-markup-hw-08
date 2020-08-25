@@ -1,7 +1,4 @@
 /*Оформление секции Наше преимущество*/
-.advantage {
-  padding-top: 94px;
-}
 
 .advantage-list {
   // display: -webkit-box;
@@ -83,6 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .advantage-list-item {
     width: 354px;
@@ -90,7 +88,7 @@
   .advantage-list-item:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .advantage-list-item:nth-child(n + 1) {
+  .advantage-list-item:nth-child(n + 3) {
     margin-top: 30px;
   }
 }
@@ -98,6 +96,10 @@
 @media screen and (min-width: 1200px) {
   .advantage-list {
     display: flex;
+  }
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .advantage-list-item:not(:last-child) {
     margin-right: 30px;

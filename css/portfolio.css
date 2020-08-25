@@ -390,7 +390,9 @@ a {
 }
 
 img {
-  vertical-align: bottom;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hide-title {
@@ -938,10 +940,10 @@ img {
 }
 
 .logo-footer-nav {
-  padding-top: 60px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -954,25 +956,12 @@ img {
   color: #2196f3;
 }
 
-.footer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.footer-ad-items {
+  margin-top: 20px;
 }
 
 .footer-ad-items a {
   text-decoration: none;
-}
-
-.footer-ad-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .street-adress,
@@ -986,12 +975,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.street-adress {
-  padding-top: 20px;
-}
-
 .contact-adress {
-  padding-top: 9px;
+  padding-top: 8px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1004,7 +989,6 @@ img {
 .footer-text {
   display: inline-block;
   color: #ffffff;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -1023,21 +1007,6 @@ img {
   margin-left: 10px;
   vertical-align: middle;
   fill: #ffffff;
-}
-
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.footer-form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-form-input {
@@ -1113,5 +1082,32 @@ img {
 .buttton-icon-send .button {
   margin-top: 0px;
   margin-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-list {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-social-link {
+    margin-top: 60px;
+  }
+  .footer-social-link .social-list {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .footer-mail {
+    margin-top: 60px;
+  }
+  .footer-form-field {
+    margin-top: 20px;
+  }
+  .footer-form-input {
+    width: 100%;
+  }
+  .buttton-icon-send .button {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

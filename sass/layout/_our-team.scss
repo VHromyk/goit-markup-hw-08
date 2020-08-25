@@ -7,22 +7,15 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    // margin-right: 30px;
-  }
+  font-size: 16px;
 }
 
 .team-section {
   background-color: #f5f4fa;
   text-align: center;
-  // padding-bottom: 94px;
 }
 
 .our-team {
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
-
   h3 {
     margin-top: 30px;
   }
@@ -38,13 +31,6 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $title-text-color;
-}
-
-.team-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 .team-work {
@@ -69,5 +55,45 @@
   }
   .our-team-card {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-section .work-title {
+    padding-top: 60px;
+  }
+  .team-section {
+    padding-bottom: 60px;
+  }
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our-team-card {
+    width: 354px;
+  }
+  .our-team-card:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .our-team-card {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section .work-title {
+    padding-top: 94px;
+  }
+  .team-section {
+    padding-bottom: 94px;
+  }
+  .our-team {
+    margin-top: 50px;
+  }
+  .our-team-card {
+    width: 270px;
+    margin-top: 0;
+  }
+  .our-team-card:not(:last-child) {
+    margin-right: 30px;
   }
 }

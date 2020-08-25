@@ -126,30 +126,35 @@
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-item">
-            <a href="">
+            <a href="#">
               <img
-                src="./images/comp.jpg"
-                alt="Ноутбук"
-                width="370"
-                height="294"
+                src="./images/desctop.jpg"
+                srcset="./images/desctop@2x.jpg 2x"
+                alt="Десктопные приложения"
+                width="100%"
               />
             </a>
             <p class="work-title-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
           </li>
           <li class="work-item">
-            <a href="">
+            <a href="#">
               <img
-                src="./images/smartphone.jpg"
-                alt=""
-                width="370"
-                height="294"
+                src="./images/mobile.jpg"
+                srcset="./images/mobile@2x.jpg 2x"
+                alt="Мобильные приложения"
+                width="100%"
               />
             </a>
             <p class="work-title-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
           </li>
           <li class="work-item">
-            <a href="">
-              <img src="./images/screen.jpg" alt="" width="370" height="294" />
+            <a href="#">
+              <img 
+              src="./images/design.jpg"
+              srcset="./images/design@2x.jpg 2x" 
+              alt="Дизайнерские решения" 
+              width="100%" 
+               />
             </a>
             <p class="work-title-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
           </li>
@@ -161,12 +166,12 @@
         <ul class="our-team container">
           <li class="our-team-card">
             <img
-              src="./images/nick_kucherenko.jpg"
-              alt="Николай Кучеренко"
-              width="450"
-              height="460"
+              src="./images/Ihor_Demianenko.jpg"
+              srcset="./images/Ihor_Demianenko@2x.jpg"
+              alt="Игор Демьяненко"
+              width="100%"
             />
-            <h3 class="team-member">Николай Кучеренко</h3>
+            <h3 class="team-member">Игор Демьяненко</h3>
             <p class="team-work">Product Designer</p>
             <ul class="social-list">
               <li class="social-list-item">
@@ -176,7 +181,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list-item">
+              <li class="social-list-item"
                 <a href="" aria-label="Instagram" class="social-list-item-link">
                   <svg class="social-list-item-link-svg">
                     <use href="./svg-icon/sprite.svg#icon-twitter"></use>
@@ -201,12 +206,12 @@
           </li>
           <li class="our-team-card">
             <img
-              src="./images/olha_ivanova.jpg"
-              alt="Ольга Иванова"
-              width="450"
-              height="460"
+              src="./images/Olha_Repina.jpg"
+              srcset="./images/Olha_Repina@2x.jpg"
+              alt="Ольга Репина"
+              width="100%"
             />
-            <h3 class="team-member">Ольга Иванова</h3>
+            <h3 class="team-member">Ольга Репина</h3>
             <p class="team-work">Frontend Developer</p>
             <ul class="social-list">
               <li class="social-list-item">
@@ -241,12 +246,12 @@
           </li>
           <li class="our-team-card">
             <img
-              src="./images/andrey_shevchenko.jpg"
+              src="./images/Nick_Tarasov.jpg"
+              srcset="./images/Nick_Tarasov@2x.jpg"
               alt="Андрей Шевченко"
-              width="450"
-              height="460"
+              width="100%"
             />
-            <h3 class="team-member">Андрей Шевченко</h3>
+            <h3 class="team-member">Николай Тарасов</h3>
             <p class="team-work">Marketing</p>
             <ul class="social-list">
               <li class="social-list-item">
@@ -281,12 +286,12 @@
           </li>
           <li class="our-team-card">
             <img
-              src="./images/ivan_nikolaev.jpg"
-              alt="Иван Николаев"
-              width="450"
-              height="460"
+              src="./images/Michael_Ermakov.jpg"
+              srcset="./images/Michael_Ermakov@2x.jpg"
+              alt="Михаил Ермаков"
+              width="100%"
             />
-            <h3 class="team-member">Иван Николаев</h3>
+            <h3 class="team-member">Михаил Ермаков</h3>
             <p class="team-work">UI Designer</p>
             <ul class="social-list">
               <li class="social-list-item">
@@ -322,7 +327,7 @@
         </ul>
       </section>
       <!--Постоянные клиенты-->
-      <!-- <section class="client">
+      <section class="client">
         <h2 class="work-title">Постоянные клиенты</h2>
         <ul class="client-list container">
           <li class="box">
@@ -369,22 +374,17 @@
           </li>
         </ul>
       </section>
-    </main> -->
+    </main>
     <!--Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-list container">
         <div class="footer-ad-list">
           <a href="./index.html" class="logo-footer-nav">
-            <span class="logo-blue">
-              Web
-            </span>
-            <span class="logo-white">Studio</span>
+            <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
           </a>
           <address class="footer-ad-items">
             <a href="" class="street-adress">г. Киев, пр-т Леси Украинки, 26</a>
-            <br />
             <a href="" class="contact-adress">info@example.com</a>
-            <br />
             <a href="" class="contact-adress">+38 099 111 11 11</a>
           </address>
         </div>
@@ -437,7 +437,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-mail">
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
           <div class="footer-form">
             <form action="#">
@@ -463,7 +463,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- /*Backdrop*/ -->
     <div class="backdrop is-hidden" data-modal>
       <form action="#" class="modal-form">

@@ -3,13 +3,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   text-align: center;
+  .box {
+    margin-top: 30px;
+  }
+}
+.client .work-title {
+  font-size: 28px;
+  line-height: 1.178;
+  margin-top: 60px;
 }
 
 .box .box-link {
   display: block;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -31,7 +39,7 @@
 }
 
 .box:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 .box-link-svg {
@@ -74,4 +82,49 @@
 
 .box-link:hover .box-link-svg {
   fill: $accent-text-color;
+}
+
+@media screen and (max-width: 479px) {
+  .client-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .client-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .client-list .box:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box .box-link {
+    width: 226px;
+  }
+  .client-list .box {
+    margin-right: 30px;
+  }
+  .client-list .box:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client .work-title {
+    margin-top: 94px;
+  }
+  .box .box-link {
+    width: 170px;
+  }
+  .client-list .box:not(:last-child) {
+    margin-right: 30px;
+  }
+  .client-list {
+    padding-bottom: 94px;
+  }
 }
