@@ -53,7 +53,10 @@
   .team-section {
     padding-bottom: 60px;
   }
-  .our-team-card {
+  .our-team {
+    margin-top: 30px;
+  }
+  .our-team-card:not(:first-child) {
     margin-top: 30px;
   }
 }
@@ -75,10 +78,14 @@
   .our-team-card:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .our-team-card {
+  .our-team {
+    margin-top: 30px;
+  }
+  .our-team-card:nth-child(n + 3) {
     margin-top: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .team-section .work-title {
     padding-top: 94px;

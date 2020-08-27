@@ -2,14 +2,7 @@
 .footer {
   background-color: #2f303a;
 }
-.logo-footer-nav {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-}
+
 .logo-white {
   color: #ffffff;
 }
@@ -199,14 +192,72 @@
   }
   .footer-mail {
     margin-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
   }
   .footer-form-field {
     margin-top: 20px;
   }
   .footer-form-input {
-    width: 100%;
+    width: 450px;
   }
   .buttton-icon-send .button {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: flex;
+  }
+  .footer {
+    padding-bottom: 60px;
+  }
+  .footer-ad-list {
+    text-align: center;
+    margin-left: 76px;
+    margin-top: 60px;
+  }
+  .footer-ad-list ~ .footer-social-link {
+    text-align: center;
+    margin-left: 165px;
+    margin-top: 65px;
+  }
+  .footer-mail {
+    margin-top: 60px;
+  }
+  .footer-mail {
+    text-align: center;
+  }
+  .footer-form-input {
+    margin-top: 20px;
+    width: 450px;
+  }
+  .buttton-icon-send .button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-ad-list {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .footer-form-field {
+    display: flex;
+  }
+  .footer-thumb {
+    display: flex;
+  }
+  .footer-mail {
+    text-align: left;
+    margin-left: 93px;
+  }
+  .footer-form-input {
+    width: 358px;
+  }
+  .footer-ad-list ~ .footer-social-link {
+    text-align: left;
+    margin-left: 70px;
   }
 }
