@@ -1,4 +1,5 @@
 /*Стилизация секции Постоянные клиенты*/
+
 .client-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,10 +37,6 @@
 .box .box-link:hover,
 .box .box-link:focus {
   border-color: $accent-text-color;
-}
-
-.box:not(:last-child) {
-  // margin-right: 30px;
 }
 
 .box-link-svg {
@@ -86,13 +83,19 @@
 
 @media screen and (max-width: 479px) {
   .client-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
 
 @media screen and (min-width: 480px) {
   .client-list {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }

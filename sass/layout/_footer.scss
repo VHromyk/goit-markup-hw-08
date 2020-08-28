@@ -192,6 +192,8 @@
 
 @media screen and (min-width: 768px) {
   .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .footer {
@@ -228,9 +230,13 @@
     margin-left: 0px;
   }
   .footer-form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .footer-thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .footer-mail {

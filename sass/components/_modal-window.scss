@@ -209,7 +209,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  // padding-left: 54px;
   margin-top: 20px;
 
   &-text {
@@ -284,6 +283,30 @@
 @media screen and (min-width: 1200px) {
   .modal-form {
     width: 528px;
+  }
+  .modal-form-massage-textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .modal-form-massage-textarea::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .modal-form-massage-textarea:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .modal-form-massage-textarea::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
   }
   .modal-form-massage-textarea::placeholder {
     font-size: 12px;

@@ -1,4 +1,5 @@
 /*Оформление адреса*/
+
 .head-address {
   &-icon {
     fill: $primary-text-color;
@@ -35,9 +36,18 @@
 
 @media screen and (max-width: 767px) {
   .head-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     &-icon {
       width: 16px;
@@ -57,7 +67,11 @@
 
 @media screen and (min-width: 768px) {
   .head-address-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     font-size: 12px;
     line-height: 1.166;
@@ -82,7 +96,11 @@
 
 @media screen and (min-width: 1200px) {
   .head-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     &-icon {
