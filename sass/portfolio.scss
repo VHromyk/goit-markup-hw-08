@@ -2,10 +2,13 @@
 @import "./utils/variables";
 @import "./base/bases";
 @import "./components/container";
+@import "./components/modal-window-is-hidden";
+@import "./components/modal-window";
 
-@import "./components/button";
 @import "./layout/header";
+@import "./components/logo";
 @import "./layout/header-adress";
+@import "./components/button";
 @import "./layout/portfolio";
 @import "./components/social-links";
 @import "./layout/footer";

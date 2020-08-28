@@ -17,37 +17,63 @@
   <body>
     <!--Header + Navigation-->
     <header>
-      <div class="header-underline">
+      <div class="header-thumb">
         <div class="page-header container">
-          <nav class="page-nav">
-            <a href="./index.html" class="logo-nav">
-              <span class="logo-part">Web</span>
-              Studio
-            </a>
-            <ul class="site-nav">
-              <li><a href="./index.html" class="link">Студия</a></li>
-              <li>
-                <a href="./portfolio.html" target="_self" class="link current">
-                  Портфолио
-                </a>
-              </li>
-              <li><a href="" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-          <address class="head-address">
-            <button class="head-address-button">
-              <svg class="head-address-icon email">
-                <use href="./svg-icon/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </button>
-            <button class="head-address-button">
-              <svg class="head-address-icon phone">
-                <use href="./svg-icon/sprite.svg#icon-smartphone"></use>
-              </svg>
-              tel:+380961111111
-            </button>
-          </address>
+          <a href="./index.html" class="logo-nav">
+            <span class="logo-part">Web</span>
+            Studio
+          </a>
+          <button
+            type="button"
+            class="menu-btn"
+            aria-expanted="false"
+            aria-controls="menu-wrapper"
+            data-menu-button
+          >
+            <svg class="menu-btn-svg" height="40" width="40">
+              <use
+                href="./svg-icon/sprite.svg#icon-burger"
+                class="icon-burger"
+              ></use>
+              <use
+                href="./svg-icon/sprite.svg#icon-close"
+                class="icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-wrapper" data-menu>
+            <nav class="page-nav">
+              <ul class="site-nav">
+                <li><a href="./index.html" class="link">Студия</a></li>
+                <li>
+                  <a
+                    href="./portfolio.html"
+                    target="_self"
+                    class="link current"
+                  >
+                    Портфолио
+                  </a>
+                </li>
+                <li><a href="" class="link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header-utils">
+              <address class="head-address">
+                <button class="head-address-button">
+                  <svg class="head-address-icon email">
+                    <use href="./svg-icon/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </button>
+                <button class="head-address-button">
+                  <svg class="head-address-icon phone">
+                    <use href="./svg-icon/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  tel:+380961111111
+                </button>
+              </address>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -55,26 +81,26 @@
       <!--Меню выбора элементов-->
       <section class="container">
         <h1 class="hide-title">Меню выбора элементов</h1>
-        <ul class="button-list container">
-          <li>
+        <ul class="button-list">
+          <li class="button-list-item">
             <button type="button" class="button primary choose">Все</button>
           </li>
-          <li>
+          <li class="button-list-item">
             <button type="button" class="button secondary choose">
               Веб-сайты
             </button>
           </li>
-          <li>
+          <li class="button-list-item">
             <button type="button" class="button secondary choose">
               Приложения
             </button>
           </li>
-          <li>
+          <li class="button-list-item">
             <button type="button" class="button secondary choose">
               Дизайн
             </button>
           </li>
-          <li>
+          <li class="button-list-item">
             <button type="button" class="button secondary choose">
               Маркетинг
             </button>
@@ -90,8 +116,11 @@
               <div class="card-image">
                 <img
                   src="./img-portfolio/notebook.jpg"
-                  width="370"
-                  height="294"
+                  srcset="
+                    ./img-portfolio/notebook.jpg    1x,
+                    ./img-portfolio/notebook@2x.jpg 2x
+                  "
+                  width="100%"
                   alt="Технокряк"
                 />
                 <div class="overlay animate__slideInUp">
@@ -114,8 +143,11 @@
                 <img
                   class="card-image"
                   src="./img-portfolio/basketball.jpg"
-                  width="370"
-                  height="294"
+                  srcset="
+                    ./img-portfolio/basketball.jpg    1x,
+                    ./img-portfolio/basketball@2x.jpg 2x
+                  "
+                  width="100%"
                   alt="Постер New Orlean vs Golden Star"
                 />
               </div>
@@ -130,8 +162,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/restaurant.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/restaurant.jpg    1x,
+                  ./img-portfolio/restaurant@2x.jpg 2x
+                "
+                width="100%"
                 alt="Ресторан Seafood"
               />
               <div class="card-content">
@@ -145,8 +180,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/headphones.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/headphones.jpg    1x,
+                  ./img-portfolio/headphones@2x.jpg 2x
+                "
+                width="100%"
                 alt="Проект Prime"
               />
               <div class="card-content">
@@ -160,8 +198,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/cardbords.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/cardbords.jpg    1x,
+                  ./img-portfolio/cardbords@2x.jpg 2x
+                "
+                width="100%"
                 alt="Проект Boxes"
               />
               <div class="card-content">
@@ -175,8 +216,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/screen.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/screen.jpg    1x,
+                  ./img-portfolio/screen@2x.jpg 2x
+                "
+                width="100%"
                 alt="Inspiration has no Borders"
               />
               <div class="card-content">
@@ -190,8 +234,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/journal.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/journal.jpg    1x,
+                  ./img-portfolio/journal@2x.jpg 2x
+                "
+                width="100%"
                 alt="Издание Limited Edition"
               />
               <div class="card-content">
@@ -205,8 +252,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/label.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/label.jpg    1x,
+                  ./img-portfolio/label@2x.jpg 2x
+                "
+                width="100%"
                 alt="Проект LAB"
               />
               <div class="card-content">
@@ -220,8 +270,11 @@
               <img
                 class="card-image"
                 src="./img-portfolio/grow.jpg"
-                width="370"
-                height="294"
+                srcset="
+                  ./img-portfolio/grow.jpg    1x,
+                  ./img-portfolio/grow@2x.jpg 2x
+                "
+                width="100%"
                 alt="Growing Business"
               />
               <div class="card-content">
@@ -235,72 +288,72 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="footer-list container">
-        <div class="footer-ad-list">
-          <a href="./index.html" class="logo-footer-nav">
-            <span class="logo-blue">
-              Web
-            </span>
-            <span class="logo-white">Studio</span>
-          </a>
-          <address class="footer-ad-items">
-            <a href="" class="street-adress">г. Киев, пр-т Леси Украинки, 26</a>
-            <br />
-            <a href="" class="contact-adress">info@example.com</a>
-            <br />
-            <a href="" class="contact-adress">+38 099 111 11 11</a>
-          </address>
+      <div class="footer-thumb container">
+        <div class="footer-list">
+          <div class="footer-ad-list">
+            <a href="./index.html" class="logo-footer-nav">
+              <span class="logo-blue">Web</span>
+              <span class="logo-white">Studio</span>
+            </a>
+            <address class="footer-ad-items">
+              <a href="" class="street-adress">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+              <a href="" class="contact-adress">info@example.com</a>
+              <a href="" class="contact-adress">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="footer-social-link">
+            <span class="footer-text"><b>ПРИСОЕДЕНЯЙТЕСЬ</b></span>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Instagram"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Twitter"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Facebook"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="LinkedIn"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-link">
-          <span class="footer-text"><b>ПРИСОЕДЕНЯЙТЕСЬ</b></span>
-          <ul class="social-list">
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Instagram"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Twitter"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Facebook"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="LinkedIn"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
+        <div class="footer-mail">
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
           <div class="footer-form">
             <form action="#">
@@ -327,5 +380,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

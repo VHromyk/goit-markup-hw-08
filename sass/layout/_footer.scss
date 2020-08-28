@@ -9,17 +9,7 @@
 .logo-blue {
   color: $accent-text-color;
 }
-// .footer-list {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-pack: justify;
-//   -ms-flex-pack: justify;
-//   justify-content: space-between;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-// }
+
 .footer-ad-items {
   a {
     text-decoration: none;
@@ -69,20 +59,6 @@
   vertical-align: middle;
   fill: $text-button;
 }
-
-// .footer-form {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-// }
-// .footer-form-field {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-// }
 
 .footer-form-input {
   width: 358px;
@@ -177,6 +153,12 @@
   margin-left: 12px;
 }
 
+@media screen and (max-width: 479px) {
+  .footer-form-input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer-list {
     text-align: center;
@@ -191,18 +173,20 @@
     padding-bottom: 0px;
   }
   .footer-mail {
-    margin-top: 60px;
     text-align: center;
     padding-bottom: 60px;
   }
   .footer-form-field {
     margin-top: 20px;
   }
-  .footer-form-input {
-    width: 450px;
-  }
   .buttton-icon-send .button {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-form-input {
+    width: 450px;
   }
 }
 

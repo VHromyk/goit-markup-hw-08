@@ -13,43 +13,58 @@
   <body>
     <!--Header + Navigation-->
     <header>
-      <div class="page-header container">
-        <a href="./index.html" class="logo-nav">
-          <span class="logo-part">Web</span>Studio
-        </a>
-        <button type="button" class="menu-btn" aria-expanted="false" aria-controls="menu-wrapper" data-menu-button>
-          <svg class="menu-btn-svg" height="40" width="40">
-            <use href="./svg-icon/sprite.svg#icon-burger" class="icon-burger"></use>
-            <use href="./svg-icon/sprite.svg#icon-close" class="icon-close"></use>
-          </svg>
-        </button>
-        <div class="menu-wrapper" data-menu>
-          <nav class="page-nav">
-            <ul class="site-nav">
-              <li><a href="./index.html" class="link current">Студия</a></li>
-              <li>
-                <a href="./portfolio.html" target="_self" class="link">
-                  Портфолио
-                </a>
-              </li>
-              <li><a href="" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header-utils">
-            <address class="head-address">
-              <button class="head-address-button">
-                <svg class="head-address-icon email">
-                  <use href="./svg-icon/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </button>
-              <button class="head-address-button">
-                <svg class="head-address-icon phone">
-                  <use href="./svg-icon/sprite.svg#icon-smartphone"></use>
-                </svg>
-                tel:+380961111111
-              </button>
-            </address>
+      <div class="header-thumb">
+        <div class="page-header container">
+          <a href="./index.html" class="logo-nav">
+            <span class="logo-part">Web</span>
+            Studio
+          </a>
+          <button
+            type="button"
+            class="menu-btn"
+            aria-expanted="false"
+            aria-controls="menu-wrapper"
+            data-menu-button
+          >
+            <svg class="menu-btn-svg" height="40" width="40">
+              <use
+                href="./svg-icon/sprite.svg#icon-burger"
+                class="icon-burger"
+              ></use>
+              <use
+                href="./svg-icon/sprite.svg#icon-close"
+                class="icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-wrapper" data-menu>
+            <nav class="page-nav">
+              <ul class="site-nav">
+                <li><a href="./index.html" class="link current">Студия</a></li>
+                <li>
+                  <a href="./portfolio.html" target="_self" class="link">
+                    Портфолио
+                  </a>
+                </li>
+                <li><a href="" class="link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header-utils">
+              <address class="head-address">
+                <button class="head-address-button">
+                  <svg class="head-address-icon email">
+                    <use href="./svg-icon/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </button>
+                <button class="head-address-button">
+                  <svg class="head-address-icon phone">
+                    <use href="./svg-icon/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  tel:+380961111111
+                </button>
+              </address>
+            </div>
           </div>
         </div>
       </div>
@@ -58,14 +73,11 @@
       <!--Эффективные решения для вашего бизнеса-->
       <section class="hero">
         <div class="hero-container container">
-            <h1 class="hero-title ">
-              эффективные решения для вашего бизнеса
-            </h1>
-            <button type="button" class="button primary" data-modal-open>
-              Заказать услугу
-            </button>
+          <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button primary" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
-       
       </section>
       <!--Наше преимущество-->
       <section class="advantage container">
@@ -128,8 +140,8 @@
           <li class="work-item">
             <a href="#">
               <img
+                srcset="./images/desctop.jpg 1x, ./images/desctop@2x.jpg 2x"
                 src="./images/desctop.jpg"
-                srcset="./images/desctop@2x.jpg 2x"
                 alt="Десктопные приложения"
                 width="100%"
               />
@@ -139,8 +151,8 @@
           <li class="work-item">
             <a href="#">
               <img
+                srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x"
                 src="./images/mobile.jpg"
-                srcset="./images/mobile@2x.jpg 2x"
                 alt="Мобильные приложения"
                 width="100%"
               />
@@ -149,12 +161,12 @@
           </li>
           <li class="work-item">
             <a href="#">
-              <img 
-              src="./images/design.jpg"
-              srcset="./images/design@2x.jpg 2x" 
-              alt="Дизайнерские решения" 
-              width="100%" 
-               />
+              <img
+                srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
+                src="./images/design.jpg"
+                alt="Дизайнерские решения"
+                width="100%"
+              />
             </a>
             <p class="work-title-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
           </li>
@@ -167,7 +179,10 @@
           <li class="our-team-card">
             <img
               src="./images/Ihor_Demianenko.jpg"
-              srcset="./images/Ihor_Demianenko@2x.jpg"
+              srcset="
+                ./images/Ihor_Demianenko.jpg    1x,
+                ./images/Ihor_Demianenko@2x.jpg 2x
+              "
               alt="Игор Демьяненко"
               width="100%"
             />
@@ -181,7 +196,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list-item"
+              <li class="social-list-item">
                 <a href="" aria-label="Instagram" class="social-list-item-link">
                   <svg class="social-list-item-link-svg">
                     <use href="./svg-icon/sprite.svg#icon-twitter"></use>
@@ -207,7 +222,10 @@
           <li class="our-team-card">
             <img
               src="./images/Olha_Repina.jpg"
-              srcset="./images/Olha_Repina@2x.jpg"
+              srcset="
+                ./images/Olha_Repina.jpg    1x,
+                ./images/Olha_Repina@2x.jpg 2x
+              "
               alt="Ольга Репина"
               width="100%"
             />
@@ -247,7 +265,10 @@
           <li class="our-team-card">
             <img
               src="./images/Nick_Tarasov.jpg"
-              srcset="./images/Nick_Tarasov@2x.jpg"
+              srcset="
+                ./images/Nick_Tarasov.jpg    1x,
+                ./images/Nick_Tarasov@2x.jpg 2x
+              "
               alt="Андрей Шевченко"
               width="100%"
             />
@@ -287,7 +308,10 @@
           <li class="our-team-card">
             <img
               src="./images/Michael_Ermakov.jpg"
-              srcset="./images/Michael_Ermakov@2x.jpg"
+              srcset="
+                ./images/Michael_Ermakov.jpg    1x,
+                ./images/Michael_Ermakov@2x.jpg 2x
+              "
               alt="Михаил Ермаков"
               width="100%"
             />
@@ -378,66 +402,69 @@
     <!--Footer-->
     <footer class="footer">
       <div class="footer-thumb container">
-      <div class="footer-list">
-        <div class="footer-ad-list">
-          <a href="./index.html" class="logo-footer-nav">
-            <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
-          </a>
-          <address class="footer-ad-items">
-            <a href="" class="street-adress">г. Киев, пр-т Леси Украинки, 26</a>
-            <a href="" class="contact-adress">info@example.com</a>
-            <a href="" class="contact-adress">+38 099 111 11 11</a>
-          </address>
-        </div>
-        <div class="footer-social-link">
-          <span class="footer-text"><b>ПРИСОЕДЕНЯЙТЕСЬ</b></span>
-          <ul class="social-list">
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Instagram"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-instagram"></use>
-                </svg>
+        <div class="footer-list">
+          <div class="footer-ad-list">
+            <a href="./index.html" class="logo-footer-nav">
+              <span class="logo-blue">Web</span>
+              <span class="logo-white">Studio</span>
+            </a>
+            <address class="footer-ad-items">
+              <a href="" class="street-adress">
+                г. Киев, пр-т Леси Украинки, 26
               </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Twitter"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="Facebook"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href=""
-                aria-label="LinkedIn"
-                class="social-list-item-link footer-link"
-              >
-                <svg class="social-list-item-link-svg footer-svg">
-                  <use href="./svg-icon/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              <a href="" class="contact-adress">info@example.com</a>
+              <a href="" class="contact-adress">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="footer-social-link">
+            <span class="footer-text"><b>ПРИСОЕДЕНЯЙТЕСЬ</b></span>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Instagram"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Twitter"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="Facebook"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href=""
+                  aria-label="LinkedIn"
+                  class="social-list-item-link footer-link"
+                >
+                  <svg class="social-list-item-link-svg footer-svg">
+                    <use href="./svg-icon/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-mail">
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
@@ -464,7 +491,7 @@
             </form>
           </div>
         </div>
-        </div>
+      </div>
     </footer>
     <!-- /*Backdrop*/ -->
     <div class="backdrop is-hidden" data-modal>
@@ -475,81 +502,87 @@
           class="modal-form-input-button-close"
         >
           <svg class="modal-form-input-svg-close" width="11" height="11">
-            <use href="./svg-icon/sprite.svg#button-close"></use>
+            <use href="./svg-icon/sprite.svg#icon-cross"></use>
           </svg>
         </button>
-        <h2 class="modal-form-title">
-          Оставьте свои данные, мы вам перезвоним
-        </h2>
-        <div class="modal-form-wrapper">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-form-input"
-            id="name"
-            placeholder=" "
-            required
-          />
-          <label for="name" class="modal-form-label">Имя</label>
-          <svg class="modal-form-input-svg" width="12" height="12">
-            <use href="./svg-icon/sprite.svg#user-name"></use>
-          </svg>
+        <div class="modal-form-thumb">
+          <h2 class="modal-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+          <div class="modal-form-wrapper">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-form-input"
+              id="name"
+              placeholder=" "
+              required
+            />
+            <label for="name" class="modal-form-label">Имя</label>
+            <svg class="modal-form-input-svg" width="12" height="12">
+              <use href="./svg-icon/sprite.svg#user-name"></use>
+            </svg>
+          </div>
+          <div class="modal-form-wrapper">
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-form-input"
+              id="phone"
+              placeholder=" "
+              required
+            />
+            <label for="phone" class="modal-form-label">Телефон</label>
+            <svg class="modal-form-input-svg" width="13" height="13">
+              <use href="./svg-icon/sprite.svg#user-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-form-wrapper">
+            <input
+              type="email"
+              name="user-email"
+              class="modal-form-input"
+              placeholder=" "
+              id="mail"
+              required
+            />
+            <label for="mail" class="modal-form-label">Почта</label>
+            <svg class="modal-form-input-svg" width="15" height="12">
+              <use href="./svg-icon/sprite.svg#user-massage"></use>
+            </svg>
+          </div>
+          <div class="modal-form-massage">
+            <textarea
+              name="user-massage"
+              id="user-massage"
+              placeholder="Введите текст"
+              class="modal-form-massage-textarea"
+            ></textarea>
+            <label for="user-massage" class="modal-form-massage-label">
+              Комментарий
+            </label>
+          </div>
+          <div class="modal-form-confidentional">
+            <input
+              type="checkbox"
+              name="policy"
+              value="accept-policy"
+              class="modal-form-checkbox"
+            />
+            <span class="modal-form-confidentional-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modal-form-confidentional-link">
+                Условия договора
+              </a>
+            </span>
+          </div>
+          <button type="submit" class="button primary modal-btn">
+            Отправить
+          </button>
         </div>
-        <div class="modal-form-wrapper">
-          <input
-            type="tel"
-            name="user-phone"
-            class="modal-form-input"
-            id="phone"
-            placeholder=" "
-            required
-          />
-          <label for="phone" class="modal-form-label">Телефон</label>
-          <svg class="modal-form-input-svg" width="13" height="13">
-            <use href="./svg-icon/sprite.svg#user-phone"></use>
-          </svg>
-        </div>
-        <div class="modal-form-wrapper">
-          <input
-            type="email"
-            name="user-email"
-            class="modal-form-input"
-            placeholder=" "
-            id="mail"
-            required
-          />
-          <label for="mail" class="modal-form-label">Почта</label>
-          <svg class="modal-form-input-svg" width="15" height="12">
-            <use href="./svg-icon/sprite.svg#user-massage"></use>
-          </svg>
-        </div>
-        <textarea
-          name="user-massage"
-          id="user-massage"
-          placeholder="Комментарий"
-          class="modal-form-massage"
-        ></textarea>
-        <div class="modal-form-confidentional">
-          <input
-            type="checkbox"
-            name="policy"
-            value="accept-policy"
-            class="modal-form-checkbox"
-          />
-          <span class="modal-form-confidentional-text">
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="modal-form-confidentional-link">
-              Условия договора
-            </a>
-          </span>
-        </div>
-        <button type="submit" class="button primary modal-btn">
-          Отправить
-        </button>
       </form>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-
   </body>
 </html>
